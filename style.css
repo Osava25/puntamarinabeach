@@ -57,7 +57,7 @@ img {
     text-shadow: 1px 2px #28282836;
 }
 .title-slider-bold {
-    font-family: 'kepler-std-bold';
+    font-family: 'kepler-std';
     font-weight: 600;
 }
 h2 {
@@ -75,8 +75,8 @@ li {
 .modulo-frase {
     font-family: 'kepler-std';
     margin-top: 5px;
-    padding: 10px 50px;
-    background-color: #118580;
+    padding: 10px;
+    background-color: #037a74;
     text-align: center;
     width: 100%;
 }
@@ -84,6 +84,16 @@ li {
 .modulo-frase h2 {
     color: #fff;
     font-size: 34px;
+}
+.modulo-frase p {
+    font-family: 'kepler-std';
+    color: #fff;
+    font-size: 28px;
+}
+.modulo-frase  a {
+    font-family: 'kepler-std-bold';
+    color: #fff;
+    font-size: 28px;
 }
 .nav {
     height: 72px;
@@ -171,7 +181,7 @@ hr {
 .content-slider {
     width: 100%;
     height: 100vh;
-    background-color: #7c388b;
+    background-color: rgb(3 122 116);;
     margin-top: -72px;
     display: flex;
     align-items: self-end;
@@ -215,13 +225,12 @@ hr {
 
 .info-form {
     min-height: 170px;
-    width: 50%;
 }
 
 .info-form p {
     text-align: center;
-    color: #118580;
-    padding: 0 20px;
+    color: #037a74;
+    padding: 20px 20px 0;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -245,14 +254,14 @@ hr {
     align-items: center;
     justify-content: space-evenly;
     padding: 0 20%;
-    margin: 10px 0;
+    margin: 0 0 20px;
 }
 
 .info-form form {
     padding: 10px 20px;
     width: 90%;
     height: 400px;
-    border: 2px solid #118580;
+    border: 2px solid #037a74;
     border-radius: 15px;
     margin: 25px auto;
 }
@@ -262,23 +271,22 @@ input {
     padding: 10px 20px;
     margin: 5px 0px;
     border-radius: 10px;
-    border: 2px solid #118580;
+    border: 2px solid #037a74;
 }
 input[type=checkbox]{
     display: inline-block;
     margin: 0 5px 0 0;
     width: auto;
-    transform: scale(1.5);
-    height: 10px;
 }
+
 textarea {
     width: 100%;
     padding: 15px 20px;
     margin: 5px 0;
-    min-height: 130px;
+    min-height: 110px;
     display: block;
     border-radius: 10px;
-    border: 2px solid #118580;
+    border: 2px solid #037a74;
 }
 
 .checkbox-terminos {
@@ -294,7 +302,7 @@ textarea {
 .button-submit-form {
     width: 80px;
     margin: 14px auto;
-    background-color: #118580;
+    background-color: #037a74;
     display: block;
     outline: none;
     border: none;
@@ -375,7 +383,7 @@ button:hover {
 }
 
 .slider-button {
-    background-color: #118580;
+    background-color: #037a74;
     padding: 20px 28px;
     border-radius: 50%;
     color: white;
@@ -420,7 +428,7 @@ button:hover {
     font-weight: 600;
     width: 180px;
     max-width: 244px;
-    color: #848484;
+    color: #454545;
     font-size: 20px;
 }
 
@@ -445,7 +453,7 @@ button:hover {
 .tipo-apto-text-desktop-passion {
     font-family: 'passion-semibold';
     font-size: 75px;
-    color: #118580;
+    color: #037a74;
     padding-bottom: 25px;
 }
 
@@ -453,7 +461,7 @@ button:hover {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 55px;
-    color: #47bab5;
+    color: #21c4cb;
     padding-bottom: 20px;
 }
 .tipo-apto-text-movil {
@@ -474,7 +482,7 @@ button:hover {
     letter-spacing: 4px;
     font-size: 25px;
     padding: 2px 5px;
-    background-color: #47bab5;
+    background-color: #21c4cb;
     color: #fff;
 }
 .box-room {
@@ -495,9 +503,15 @@ button:hover {
     line-height: 1.8;
 }
 
-.button-cotizar button {
+.button-cotizar-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-cotizar {
     color: #fff;
-    border: 2px solid #105d59;
+    border: 2px solid #037a74;
     font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -505,7 +519,7 @@ button:hover {
     margin-right: 25px;
     padding: 6px 18px;
     border-radius: 25px;
-    background-color: #47bab5;
+    background-color: #21c4cb;
 }
 .sitios-section {
     max-width: 1100px;
@@ -527,6 +541,7 @@ button:hover {
 }
 .text-info-sitios {
     font-size: 15px;
+    color: #454545;
 }
 .bold-montserrat {
     font-weight: 600;
@@ -546,6 +561,7 @@ button:hover {
     font-size: 22px;
     width: 700px;
     margin: 0 auto;
+    color: #454545;
 }
 .logo-metropoli {
     width: 250px;
@@ -554,21 +570,45 @@ button:hover {
 .ultimos-proyectos {
     border-top: 2px solid #32bb32;
     border-bottom: 2px solid #32bb32;
-    padding: 0px 0px 0px;
+    padding: 5px 0px 5px;
+    color: #6db949;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 22px;
     margin: 20px auto;
 }
+.modulo-texto-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 50px;
+    text-align: center;
+    font-family: 'montserrat';
+    align-items: flex-start;
+}
+.modulo-texto-footer p {
+    padding-bottom: 20px;
+}
+.img-sitios {
+    height: 150px;
+    object-fit: cover;
+}
 .row-contact {
     max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
 }
 .d-none {
     display: none;
 }
 .logo-puntamarina-footer {
-    width: 150px;
-    margin: 0 auto;
+    width: 200px;
+}
+.block-content-contact-social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .content-contact-footer {
     display: flex;
@@ -578,6 +618,7 @@ button:hover {
     margin: 20px 0px 0px;
 }
 .fa-location-dot:before, .fa-mobile-screen-button:before {
+    color: #037a74;
     font-size: 38px;
     padding-right: 10px;
 }
@@ -586,9 +627,32 @@ button:hover {
     flex-direction: row;
     text-align: left;
     justify-content: center;
+    align-items: center;
+    padding-right: 23px;
+    margin: 10px 0;
 }
-.fa-instagram:before {
+.content-contact-social p {
+    padding-bottom: 0;
+}
+.fa-instagram:before, .fa-facebook:before, .fa-youtube:before {
+    color: #037a74;
     padding-right: 10px;
+}
+.buttom-metropoli-web {
+    padding: 8px 30px;
+    background-color: #0c807d;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+.logos-footer-end {
+    width: 600px;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+.text-color-metropoli {
+    color: #6db949;
+    font-weight: 800;
 }
 
 @media only screen and (max-width: 860px) {
@@ -619,7 +683,7 @@ button:hover {
     
     .nav__reponsive-li-container {
         width: 100%;
-        background-color: #177a7f;
+        background-color: #037a74;
         position: relative;
         top: -1000px;
         height: 300px;
@@ -692,6 +756,9 @@ button:hover {
     .modulo-frase h2 {
         font-size: 1.5rem;
     }
+    .modulo-frase  a, .modulo-frase p {
+        font-size: 1.3rem;
+    }
     
     .modulo__responsive-img {
         display: block;
@@ -709,6 +776,8 @@ button:hover {
         padding-bottom: 20px;
         font-size: 16px;
         width: auto;
+        color: #454545;
+        ;
     }
     .slide img {
         height: 50vh;
@@ -720,9 +789,7 @@ button:hover {
         padding: 10px 15px;
         font-size: 15px;
     }
-    input[type=checkbox]{
-        transform: scale(0.5);
-    }
+    
     .colum-features {
         font-size: 15px;
         padding: 10px 15px;
@@ -752,7 +819,7 @@ button:hover {
         display: inline-block;
         font-family: 'passion-semibold';
         font-size: 45px;
-        color: #118580;
+        color: #037a74;
         padding-bottom: 15px;
     }
     .tipo-apto-text-movil {
@@ -760,7 +827,7 @@ button:hover {
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 35px;
-        color: #47bab5;
+        color: #21c4cb;
     }
     .tipo-apto-text-desktop {
         display: none;
@@ -784,17 +851,18 @@ button:hover {
         font-size: 15px;
     }
 
-    .button-cotizar button {
+    .button-cotizar {
         color: #fff;
-        border: 2px solid #105d59;
+        border: 2px solid #037a74;
         font-size: 18px;
         padding: 4px 18px;
         border-radius: 25px;
-        background-color: #118580;
+        background-color: #21c4cb;
+        margin-right: 0;
     }
     .sitio {
         max-width: 145px;
-        margin: 10px 5px 80px;
+        margin: 10px 5px 10px;
         height: 320px;
     }
     .logo-metropoli {
@@ -803,22 +871,58 @@ button:hover {
     .ultimos-proyectos {
         border-top: 2px solid #32bb32;
         border-bottom: 2px solid #32bb32;
-        padding: 0px 0px 0px;
+        padding: 5px 0px 5px;
+        font-size: 18px;
         font-style: italic;
-        font-weight: 500;
+        font-weight: 800;
         margin: 20px auto;
-    } 
+        color: #6db949;
+    }
+    .img-sitios {
+        height: 100px;
+        object-fit: cover;
+    }
+    .row-contact {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-puntamarina-footer {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .modulo-texto-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 50px;
+        text-align: center;
+        font-family: 'montserrat';
+    }
+    .logos-footer-end {
+        width: 100%;
+    }
+    .block-content-contact-social {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-contact-social {
+        padding-right: 0;
+    }  
 }
 
 
 @keyframes fadein {
     0% {
-        position: relative;
-        left: 0%;
+        opacity: 0%;
     }
     
     100% {
-        left: 100%;
+        opacity: 100%;
     }
 }
 

@@ -32,7 +32,12 @@ let intervalId;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-      slide.classList.toggle("d-none", i === index);
+    if (i === index) {
+      slide.classList.remove("d-none");
+    }
+    else {
+      slide.classList.add("d-none");
+    }  
   });
 }
 
@@ -74,7 +79,12 @@ let intervalId2;
 
 function showSlide2(index) {
   slides2.forEach((slide, i) => {
-      slide.classList.toggle("d-none", i === index);
+    if (i === index) {
+      slide.classList.remove("d-none");
+    }
+    else {
+      slide.classList.add("d-none");
+    }  
   });
 }
 
