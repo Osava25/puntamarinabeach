@@ -1,6 +1,6 @@
 *, h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -42,7 +42,7 @@ html {
 
 
 a {
-    text-decoration: none;
+    text-decoration: underline
 }
 
 img {
@@ -124,6 +124,7 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding: 0 10px;
+    text-decoration: none;
 }
 
 .nav__li:hover > a {
@@ -189,6 +190,33 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
 }
+.content-slider-gracias {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3 122 116);;
+    margin-top: -72px;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    object-fit:cover;
+    height: 100vh;
+}
+.content-slider-gracias img {
+    object-fit:cover;
+    height: 100vh;
+}
+.content-slider-gracias::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: 0;
+}
 
 .content-slider img {
     object-fit:cover;
@@ -221,10 +249,16 @@ hr {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
-
+.content-info-form a {
+    color: #2c2c2c;
+}
 .info-form {
     min-height: 170px;
+}
+.info-form a {
+    color: #454545;
 }
 
 .info-form p {
@@ -552,7 +586,7 @@ button:hover {
     justify-content: center;
     padding: 40px 50px;
     text-align: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .modulo__texto p {
@@ -617,9 +651,17 @@ button:hover {
     justify-content: center;
     margin: 20px 0px 0px;
 }
-.fa-location-dot:before, .fa-mobile-screen-button:before {
+.content-contact-footer a {
+    color: #454545;
+}
+.fa-location-dot:before {
     color: #037a74;
     font-size: 38px;
+    padding-right: 10px;
+}
+.fa-mobile-screen-button:before {
+    color: #037a74;
+    font-size: 22px;
     padding-right: 10px;
 }
 .content-contact-social {
@@ -630,6 +672,10 @@ button:hover {
     align-items: center;
     padding-right: 23px;
     margin: 10px 0;
+}
+.content-contact-social a {
+    text-decoration: none;
+    color: #454545;
 }
 .content-contact-social p {
     padding-bottom: 0;
@@ -654,6 +700,85 @@ button:hover {
     color: #6db949;
     font-weight: 800;
 }
+.modulo-descarga-brochure {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+.modulo-descarga-brochure a {
+    margin:  0 auto;
+}
+.modulo-descarga-brochure img {
+    width: 300px;
+    margin: 0 auto;
+}
+.modulo-gracias-contactarnos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px 0;
+    background-color: #e0e0e0;
+    align-items: center;
+    justify-content: center;
+}
+.modulo-gracias-contactarnos p {
+    font-size: 20px;
+}
+.modulo-gracias-contactarnos img {
+    width: 200px;
+    margin: 0 auto;
+}
+.boton-whatsapp-flotante {
+    border-radius: 6px 6px 6px 6px;
+    bottom: 10px;
+    right: 10px;
+    margin-left: 10px;
+    padding: 10px 0 0;
+    position: fixed;
+    text-align: center;
+    width: 90px;
+    z-index: 15;
+}
+.boton-whatsapp-flotante img {
+    width: 65px;
+}
+@media only screen and (min-width: 861px) and (max-width: 1190px) {
+    .nav__ul {
+        display: none;
+    }
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+    .nav__responsive-li {
+        padding: 8px 4px;
+    }
+    .nav__responsive-li a {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    
+    .nav__reponsive-li-container {
+        width: 100%;
+        background-color: #037a74;
+        position: relative;
+        top: -1000px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    .nav__li-container-transition {
+        top: 0px;
+    }
+}
+
 
 @media only screen and (max-width: 860px) {
     .info-form {
@@ -742,6 +867,9 @@ button:hover {
     .info-header h1 {
         text-align: center;
         font-size: 2.7rem;
+    }
+    .info-header a {
+        text-decoration: none;
     }
 
     .col-60, .col-50, .col-40 {
@@ -847,7 +975,7 @@ button:hover {
 
     .info-apto ul li {
         font-family: 'Montserrat';
-        color: #9daeab;
+        color: #768381;
         font-size: 15px;
     }
 
@@ -863,7 +991,7 @@ button:hover {
     .sitio {
         max-width: 145px;
         margin: 10px 5px 10px;
-        height: 320px;
+        height: 340px;
     }
     .logo-metropoli {
         width: 170px;
@@ -912,6 +1040,10 @@ button:hover {
     }
     .content-contact-social {
         padding-right: 0;
+        text-decoration: none;
+    }
+    .boton-whatsapp-flotante {
+        display: none;
     }  
 }
 
