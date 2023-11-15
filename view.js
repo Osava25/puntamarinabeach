@@ -3,7 +3,8 @@
 
 var menuResponsive = document.querySelector(".nav__reponsive-li-container");
 var menuResponsiveButton = document.getElementById('button-responsive');
-let listMenuResponsive = document.querySelectorAll(".nav__responsive-li")
+let listMenuResponsive = document.querySelectorAll(".nav__responsive-li");
+let ulMenuResponsive = document.getElementById("nav_menu");
 
 menuResponsiveButton.addEventListener("click", () => {
   menuResponsive.classList.toggle("nav__li-container-transition");
@@ -21,6 +22,9 @@ window.addEventListener("scroll", () => {
   let fixedMenu = document.getElementById("nav_menu")
   fixedMenu.classList.toggle("bg-menu-scroll", window.scrollY > 0)
 });
+
+// Menú responsive dinamico
+
 
 
 // Funcion slider
