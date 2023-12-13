@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -66,10 +67,19 @@ h2 {
 
 p {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
 }
 
 li {
     list-style: none;
+}
+
+.space-bottom {
+    margin-bottom: 12px;
+}
+
+.space-top {
+    margin-top: 12px;
 }
 
 .modulo-frase {
@@ -777,6 +787,11 @@ button:hover {
     .nav__li-container-transition {
         top: 0px;
     }
+}
+
+.container-center {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 
