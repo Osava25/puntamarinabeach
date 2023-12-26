@@ -21,6 +21,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap" rel="stylesheet">
+
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -87,9 +93,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/891470435?h=193ce77a84&color=7EB420&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             </div>
             <div class="info-form form col-40">
+                <!-- <script type="text/javascript" src="https://api.clientify.net/web-marketing/superforms/script/165121.js"></script> -->
+               <!-- Codigo formulario oficial Clientify -->
                 <script type="text/javascript" src="https://api.clientify.net/web-marketing/superforms/script/157742.js"></script>
+                <!-- Fin codigo formulario oficial Clientify -->
                 <!-- <form action="">
                     <input type="text" name="nombre" autocomplete="on" placeholder="Nombre:">
+                    <input id="phone" type="tel" name="phone">
                     <input type="text" name="email" autocomplete="on" placeholder="Email:">
                     <input type="text" name="asunto" autocomplete="on" placeholder="Asunto:">
                     <textarea type="text" name="mensaje" autocomplete="on" placeholder="Escribe tu mensaje:"></textarea>
@@ -97,6 +107,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="checkbox-terminos"><input type="checkbox"> <label for=""> Acepto los Términos y condiciones</label></div>
                     <button class="button-submit-form" type="submit">ENVIAR</button>
                 </form> -->
+                <!-- ^^  form code  ^^ -->
+                <div class="alert alert-info" style="display: none;"></div>
             </div>
         </div>
         <div class="modulo__responsive-img">
@@ -122,7 +134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="src/slider/zonas-comunes/comunes1.jpg" alt="Imagen 1">
             </div>
             <div class="slide d-none">
-                <img src="src/slider/zonas-comunes/comunes2.jpg" alt="Imagen 2">
+                <img src="src/slider/zonas-comunes/comunes2.jpeg" alt="Imagen 2">
             </div>
             <div class="slide d-none">
                 <img src="src/slider/zonas-comunes/comunes3.jpg" alt="Imagen 1">
@@ -137,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="src/slider/zonas-comunes/comunes6.jpg" alt="Imagen 2">
             </div>
             <div class="slide d-none">
-                <img src="src/slider/zonas-comunes/comunes7.jpg" alt="Imagen 1">
+                <img src="src/slider/zonas-comunes/comunes7.jpeg" alt="Imagen 1">
             </div>
             <div class="slide d-none">
                 <img src="src/slider/zonas-comunes/comunes8.jpg" alt="Imagen 2">
@@ -146,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="src/slider/zonas-comunes/comunes9.jpg" alt="Imagen 1">
             </div>
             <div class="slide d-none">
-                <img src="src/slider/zonas-comunes/comunes10.jpg" alt="Imagen 2">
+                <img src="src/slider/zonas-comunes/comunes10.jpeg" alt="Imagen 2">
             </div>
             
         </div>
@@ -478,4 +490,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <script src="view.js"></script>
 </body>
+<!-- Codigo bandera paises formulario -->
+<!-- <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    phoneInputField.addEventListener("change", () => console.log(phoneInput.getNumber()))
+
+    const info = document.querySelector(".alert-info");
+
+    function process(event) {
+    event.preventDefault();
+
+    const phoneNumber = phoneInput.getNumber();
+
+    info.style.display = "";
+    info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+}
+
+  </script> -->
 </html>
