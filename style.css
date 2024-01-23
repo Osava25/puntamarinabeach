@@ -50,6 +50,18 @@ img {
     width: 100%;
 }
 
+.row {
+    width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .info-header h1 {
     font-family:'kepler-std', Times, serif;
     text-align: right;
@@ -60,9 +72,6 @@ img {
 .title-slider-bold {
     font-family: 'kepler-std';
     font-weight: 600;
-}
-h2 {
-    font-family: 'kepler-std';
 }
 
 p {
@@ -362,6 +371,7 @@ button:hover {
 
 .col-60 {
     width: 60%;
+    padding: 20px 30px;
 }
 
 .col-50 {
@@ -646,6 +656,12 @@ button:hover {
 .d-none {
     display: none;
 }
+.title-informativo-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #118580;
+}
 .logo-puntamarina-footer {
     width: 200px;
 }
@@ -889,6 +905,9 @@ button:hover {
     }
 
     .col-60, .col-50, .col-40 {
+        width: 100%;
+    }
+    .row {
         width: 100%;
     }
     .first-content{
