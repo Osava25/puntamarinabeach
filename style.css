@@ -878,7 +878,11 @@ button:hover {
     .content-slider {
         align-items: center;
         justify-content: center;
-        height: 90vh;
+        height: 80vh;
+    }
+    .content-slider img {
+        object-fit:cover;
+        height: 80vh;
     }
     .img-slider-desktop {
         display: none;
