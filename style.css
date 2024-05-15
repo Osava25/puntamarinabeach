@@ -866,7 +866,7 @@ button:hover {
 
     .contact-button-whatsapp {
         display: block;
-        background-color: #32bb32;
+        background-color: #037a74;
         padding: 10px 20px;
         margin-top: 30px;
         border-radius: 25px;
@@ -878,11 +878,14 @@ button:hover {
     .content-slider {
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 70vh;
+    }
+    .content-slider::before {
+        height: 70vh;
     }
     .content-slider img {
         object-fit:cover;
-        height: 80vh;
+        height: 71vh;
     }
     .img-slider-desktop {
         display: none;
@@ -898,7 +901,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
         width: 57%;
-        margin-bottom: 13vh;
+        margin-bottom: 0;
     }
 
     .info-header h1 {
@@ -922,10 +925,11 @@ button:hover {
         font-size: 1em;
     }
     .modulo-frase h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .modulo-frase  a, .modulo-frase p {
         font-size: 1.3rem;
+        padding-top: 13px;
     }
     
     .modulo__responsive-img {
