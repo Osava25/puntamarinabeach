@@ -766,6 +766,49 @@ button:hover {
 .boton-whatsapp-flotante img {
     width: 65px;
 }
+.boton-flot-tel {
+    display: none;
+}
+
+.container-center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*///////////////////////
+/* MARGENES | ESPACIOS */
+/*//////////////////////*/
+
+.space-bottom {
+    margin-bottom: 12px;
+}
+.space-top {
+    margin-top: 12px;
+}
+.space-top-32 {
+    margin-top: 32px;
+}
+.space-top-40 {
+    margin-top: 40px;
+}
+.space-top-52 {
+    margin-top: 52px;
+}
+.space-bottom-32 {
+    margin-bottom: 32px;
+}
+.space-bottom-40 {
+    margin-bottom: 40px;
+}
+.space-bottom-52 {
+    margin-bottom: 52px;
+}
+.space-bottom-60 {
+    margin-bottom: 60px;
+}
+
+
 @media only screen and (min-width: 861px) and (max-width: 1190px) {
     .nav__ul {
         display: none;
@@ -802,13 +845,6 @@ button:hover {
         top: 0px;
     }
 }
-
-.container-center {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
 
 @media only screen and (max-width: 860px) {
     .info-form {
@@ -871,6 +907,19 @@ button:hover {
         color: #fff;
         font-size: 15px;
         border: none;
+    }
+
+    .contact-button-tel-movil {
+        display: block;
+        background-color: #21c4cb;
+        padding: 15px 27px;
+        margin-top: 30px;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        font-weight: bold;
+
     }
 
     .content-slider {
@@ -1084,9 +1133,53 @@ button:hover {
         padding-right: 0;
         text-decoration: none;
     }
+    .boton-flot-tel {
+        position: fixed;
+        display: inline-block;
+        left: 10px;
+        bottom: 86px;
+    }
+    .boton-flot-tel  a {
+        text-decoration: none;
+    }
     .boton-whatsapp-flotante {
         display: none;
-    }  
+    }
+    /*///////////////////////
+    /* MARGENES | ESPACIOS */
+    /*//////////////////////*/
+
+    .space-bottom-mov {
+        margin-bottom: 12px;
+    }
+    .space-top-mov {
+        margin-top: 12px;
+    }
+    .space-top-0-mov {
+        margin-top: 0;
+    }
+    .space-top-32-mov {
+        margin-top: 32px;
+    }
+    .space-top-40-mov {
+        margin-top: 40px;
+    }
+    .space-top-52-mov {
+        margin-top: 52px;
+    }
+    .space-bottom-32-mov {
+        margin-bottom: 32px;
+    }
+    .space-bottom-40-mov {
+        margin-bottom: 40px;
+    }
+    .space-bottom-52-mov {
+        margin-bottom: 52px;
+    }
+    .space-bottom-60-mov {
+        margin-bottom: 60px;
+    }
+  
 }
 
 
