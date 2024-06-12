@@ -42,6 +42,45 @@
      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
    />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <!-- CSS Fancybox Gallery Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/>
+<style>
+    #myCarousel {
+      --f-carousel-spacing: 10px;
+      --f-carousel-slide-width: 100%;
+      --f-progress-color: #037a74;
+    }
+
+    #myCarousel .f-carousel__slide img {
+      height: 100vh;
+    }
+    @media only screen and (max-width: 860px) {
+        #myCarousel .f-carousel__slide img {
+            height: 35vh;
+        }
+    }
+    .f-carousel {
+  --f-button-width: 38px;
+  --f-button-height: 38px;
+
+  --f-button-svg-width: 16px;
+  --f-button-svg-height: 16px;
+  --f-button-svg-stroke-width: 2.5;
+
+  --f-button-color: #fff;
+  --f-button-border-radius: 50%;
+  --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0
+          0 / 30%);
+
+  --f-button-bg: #037a74;
+  --f-button-hover-bg: #1a2b4c;
+  --f-button-active-bg: #111d33;
+}
+
+  </style>
+<!-- End CSS Fancybox Gallery Slider -->
+
 </head>
 
 <body>
@@ -143,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Más de <spam class="info-form-bold">30 amenidades</spam> para vivir experiencias y momentos propios de un <spam class="info-form-bold">CLUB DE PLAYA.</spam></p>
         </div>
         <!-- Contenido Slider -->
-        <div class="slider-container slides-img" id="slider">
+        <!-- <div class="slider-container slides-img" id="slider">
             <button id="prevBtn" class="slider-button">&#10094;</button>
             <button id="nextBtn" class="slider-button">&#10095;</button>
             <div class="slide d-none">
@@ -177,8 +216,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="src/slider/zonas-comunes/comunes2.jpeg" alt="Imagen 2">
             </div>
             
-        </div>
+        </div> -->
         <!-- Fin Contenido Slider -->
+         <!-- Slider Fancybox -->
+        <div>
+            <div class="f-carousel" id="myCarousel">
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes1.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes10.jpeg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes3.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes4.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes11.jpeg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes6.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes7.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes8.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes9.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/zonas-comunes/comunes2.jpg" alt="Imagen 1">
+                </div>
+             </div>   
+        </div>
+        <!-- Fin Slider Fancybox -->
         <div class="container-feature ">
             <div class="features-project">
                 <div class="colum-features">
@@ -527,6 +602,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>    
     </div>
     <script src="view.js"></script>
+    <!-- JS Fancybox Gallery Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+    <script>
+      new Carousel(document.getElementById("myCarousel"), {
+        Autoplay : {
+          timeout : 4000
+        }
+      }, {
+        Autoplay
+      });
+    </script>
+    <!-- End JS Fancybox Gallery Slider -->
 </body>
 <!-- Codigo bandera paises formulario -->
 <!-- <script>
