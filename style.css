@@ -808,6 +808,49 @@ button:hover {
     margin-bottom: 60px;
 }
 
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #333333e9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cookie-message p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px 0 0;
+    flex: 1;
+}
+
+.cookie-message p a {
+    color: #21c4cb;
+}
+
+.btn-accept {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-accept:hover {
+    background-color: #218838;
+}
+
 
 @media only screen and (min-width: 861px) and (max-width: 1190px) {
     .nav__ul {

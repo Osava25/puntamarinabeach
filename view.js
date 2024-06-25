@@ -1,3 +1,26 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const cookieConsent = document.getElementById('cookieConsent');
+  const btnAccept = document.getElementById('btnAccept');
+
+  // Verifica si el usuario ya ha aceptado las cookies
+
+  let cookieKey = localStorage.getItem('cookiesAccepted')
+  if (cookieKey) {
+      cookieConsent.style.display = 'none';
+  }
+  else {
+    console.log("La cookie está almacenada");
+    cookieConsent.style.display = 'flex';
+
+  }
+
+  btnAccept.addEventListener('click', function() {
+      // Almacena la aceptación en localStorage
+      localStorage.setItem('cookiesAccepted', 'verdadero');
+      cookieConsent.style.display = 'none';
+  });
+});
+
 //document.body.onload = divSlider;
 // Menu responsive
 
@@ -192,3 +215,7 @@ laFirmaMenu.addEventListener("click", () => {
 
 console.log("x: " + coordApartamentos.x);
 console.log("y: " + coordApartamentos.y);
+
+
+
+
