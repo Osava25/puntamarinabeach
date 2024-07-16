@@ -62,6 +62,23 @@
             object-fit: cover;
         }
     }
+
+    #myCarousel-2 {
+      --f-carousel-spacing: 10px;
+      --f-carousel-slide-width: 100%;
+      --f-progress-color: #037a74;
+    }
+
+    #myCarousel-2 .f-carousel__slide img {
+      height: 100vh;
+      object-fit: cover;
+    }
+    @media only screen and (max-width: 860px) {
+        #myCarousel-2 .f-carousel__slide img {
+            height: 50vh;
+            object-fit: cover;
+        }
+    }
     .f-carousel {
   --f-button-width: 38px;
   --f-button-height: 38px;
@@ -250,7 +267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <img src="src/slider/zonas-comunes/comunes7.jpeg" alt="Imagen 1">
                 </div>
                 <div class="f-carousel__slide">
-                    <img src="src/slider/zonas-comunes/comunes8.jpg" alt="Imagen 1">
+                    <img style="object-position: left;" src="src/slider/zonas-comunes/comunes8.jpg" alt="Imagen 1">
                 </div>
                 <div class="f-carousel__slide">
                     <img src="src/slider/zonas-comunes/comunes9.jpg" alt="Imagen 1">
@@ -340,7 +357,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <!-- Contenido Slider 2-->
         <div class="slider-container" id="slider-2">
-            <div class="slide-2 d-none">
+            <div class="f-carousel" id="myCarousel-2">
+                <div class="f-carousel__slide">
+                    <img style="object-position: left;" src="src/slider/aptos/apto1.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/aptos/apto2.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/aptos/apto3.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/aptos/apto4.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img src="src/slider/aptos/apto5.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img style="object-position: left;" src="src/slider/aptos/apto6.jpg" alt="Imagen 1">
+                </div>
+                <div class="f-carousel__slide">
+                    <img style="object-position: left;" src="src/slider/aptos/apto7.jpg" alt="Imagen 1">
+                </div>
+             </div>   
+
+            <!-- <div class="slide-2 d-none">
                 <img style="object-position: left;" src="src/slider/aptos/apto1.jpg" alt="Imagen 1">
             </div>
             <div class="slide-2 d-none">
@@ -362,13 +403,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img style="object-position: left;" src="src/slider/aptos/apto7.jpg" alt="Imagen 3">
             </div>
             <button id="prevBtn-2" class="slider-button">&#10094;</button>
-            <button id="nextBtn-2" class="slider-button">&#10095;</button>
+            <button id="nextBtn-2" class="slider-button">&#10095;</button> -->
         </div>
         <!-- Fin Contenido Slider 2-->
         <!-- Contenido Aptos-->
-        <div class="content-aptos">
+        <div class="content-aptos">              
             <div class="img-apto">
-                <img src="src/Planos/apto-tipo1-2024.jpeg" alt="">
+                <img src="src/Planos/apto-tipo1-julio-min.png" />
             </div>
             <div class="info-apto">
                 <h3 class="tipo-apto-text-movil-passion">Tipo 1 <span style="color: #9daeab;">|</span> <span class="tipo-apto-text-movil">78m2</span></h3>
@@ -395,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <hr>
         <div class="content-aptos">
             <div class="img-apto">
-                <img src="src/Planos/apto-tipo2-2024.jpeg" alt="">
+                <img src="src/Planos/apto-tipo2-julio-min.png" alt="">
             </div>
             <div class="info-apto">
                 <h3 class="tipo-apto-text-movil-passion">Tipo 2 <span style="color: #9daeab;">|</span> <span class="tipo-apto-text-movil">102m2</span></h3>
@@ -610,10 +651,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <script src="view.js"></script>
     <!-- JS Fancybox Gallery Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
     <script>
-      new Carousel(document.getElementById("myCarousel"), {
+        new Carousel(document.getElementById("myCarousel"), {
+          Autoplay : {
+            timeout : 4000
+          }
+        }, {
+          Autoplay
+        });
+      </script>
+    <script>
+      new Carousel(document.getElementById("myCarousel-2"), {
         Autoplay : {
           timeout : 4000
         }
