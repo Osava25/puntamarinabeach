@@ -1,0 +1,53 @@
+#: locale=es
+
+## Media
+
+### Audio
+audiores_0DAA30F5_380C_A7DF_41C9_540252F8CE13.mp3Url = media/audio_0085C038_380C_E655_419B_41AE68158AFA_es.mp3
+
+### Floorplan
+
+### Imágen
+imlevel_BF580C25_380F_4645_419C_ACEAAF56D2C0.url = media/map_2D7E2C67_32A1_A047_41A3_41BAEFF5D0F4_es_0.png
+imlevel_BF59EC25_380F_4645_41C0_57F48F906B62.url = media/map_2D7E2C67_32A1_A047_41A3_41BAEFF5D0F4_es_1.png
+
+### Título
+panorama_24EA9950_37F7_B8F6_4191_DDC379B8D124.label = Alcoba 1 Vista A
+panorama_24EA212A_37F7_A8AA_41BE_92E5D8D65DB3.label = Alcoba 1 Vista B
+panorama_24EA8908_37F7_5856_4186_C091EBAE3854.label = Alcoba 2
+panorama_24EAE0E6_37F7_69DA_41C7_BDF5684F92DC.label = Alcoba 3
+panorama_6CFCE2EA_380F_43CF_41A4_86615652AE92.label = Balcón
+panorama_24EA56B3_37F6_A9BA_41C8_748A45D404E2.label = Baño Alcoba 1
+panorama_24EA0DC4_37F6_BBDE_41C2_C189490C8336.label = Baño Aux Alcobas 2 y 3
+panorama_24E9E43E_37F6_A8AA_4180_8AD4B9FC4849.label = Baño Social
+panorama_24EABC4C_37F6_D8EE_41B6_A2D3F69B6670.label = Cocina 
+panorama_17D3E632_3801_425F_4193_DE0029C637EF.label = Entrada
+panorama_24E953B0_37F6_EFB6_41C6_AA3D919A8691.label = Pasillo
+panorama_24EB1BF6_37F6_FFBA_418C_30065B6E8A71.label = Pasillo B
+panorama_24E99BF0_37F6_DFB6_41B4_28BBEA219FBD.label = Vestier Alcoba 1
+panorama_1717C696_3806_C247_41BD_7D1DF0070977.label = Zona Social Vista A
+panorama_24E6DB88_37F6_B856_41B5_CB913F0439F4.label = Zona Social Vista B
+panorama_23F1980B_37F1_586A_41C0_ECC10E8A8816.label = Zona Social Vista C
+map_2D7E2C67_32A1_A047_41A3_41BAEFF5D0F4.label = plano-B-57,97-400x361-no-index
+panorama_24EA386B_37F7_78AA_41C5_D8ED47FE2E86.label = Área de Labores
+
+## Menú Botón Derecho
+
+### Texto
+PlayerMenuItem_008FBB93_100E_7A98_4196_6C2775DB3026.label = CARLOS VARGAS FOTOGRAFIA SAS  3118559040  BOGOTÁ COLOMBIA
+
+## Skin
+
+### Imágen
+Image_1209B6DE_32A0_E049_41BA_62284FE51642.url = skin/Image_1209B6DE_32A0_E049_41BA_62284FE51642_es.png
+
+### Texto Multilínea
+HTMLText_92AD0F4D_8962_3C5B_41A3_48925ABA4B6C.html = <div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:7.89px;"><BR STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:8.61px;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:center;font-size:11px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#cccccc;font-size:11px;">Music by Bensound.com</SPAN></SPAN></DIV></div>
+
+## Tour
+
+### Descripción
+tour.description = PUNTAMARINA BEACH -METROPOLI
+
+### Título
+tour.name = PUNTAMARINA  BEACH
