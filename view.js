@@ -1,24 +1,26 @@
+// JS Modulo aceptación de cookies
+
 document.addEventListener('DOMContentLoaded', function() {
-  const cookieConsent = document.getElementById('cookieConsent');
-  const btnAccept = document.getElementById('btnAccept');
+  const cookieConsent = document.getElementById('cookieConsent'); // Div donde se inserta el el modulo de cookies
 
   // Verifica si el usuario ya ha aceptado las cookies
-
   let cookieKey = localStorage.getItem('cookiesAccepted')
-  if (cookieKey) {
-      cookieConsent.style.display = 'none';
-  }
-  else {
-    console.log("La cookie está almacenada");
-    cookieConsent.style.display = 'flex';
 
-  }
-
-  btnAccept.addEventListener('click', function() {
-      // Almacena la aceptación en localStorage
-      localStorage.setItem('cookiesAccepted', 'verdadero');
-      cookieConsent.style.display = 'none';
-  });
+  if (!cookieKey) {
+    // Carga en el DOM el mensaje de cookies
+    cookieConsent.classList.add("cookie-consent");
+    cookieConsent.innerHTML = `<div class="cookie-message">
+              <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas el uso de cookies. <a target="_blank" href="https://miradordelpuerto.co/docs/politicas-mirador.pdf">Ver políticas</a></p>
+              <button class="btn-accept" id="btnAccept">Cerrar y Aceptar</button>
+          </div>`
+    // Variable que almacena botón de aceptar cookies
+    const btnAccept = document.getElementById('btnAccept');
+    btnAccept.addEventListener('click', function() {
+    // Almacena la aceptación en localStorage
+    localStorage.setItem('MiradorCookiesAccepted', 'verdadero');
+    cookieConsent.style.display = 'none';
+  });           
+}
 });
 
 //document.body.onload = divSlider;
