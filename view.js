@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cookieConsent.classList.add("cookie-consent");
     cookieConsent.innerHTML = `<div class="cookie-message">
               <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas el uso de cookies. <a target="_blank" href="https://miradordelpuerto.co/docs/politicas-mirador.pdf">Ver políticas</a></p>
-              <button class="btn-accept" id="btnAccept">Cerrar y Aceptar</button>
+              <button class="btn-accept" id="btnAccept">Aceptar y Cerrar</button>
           </div>`
     // Variable que almacena botón de aceptar cookies
     const btnAccept = document.getElementById('btnAccept');
