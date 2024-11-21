@@ -170,6 +170,14 @@ li {
     cursor: pointer;
 }
 
+.display-desktop {
+    display: block;
+}
+
+.display-movil {
+    display: none;
+}
+
 .fa-bars {
     color: #fff;
 }
@@ -892,6 +900,14 @@ button:hover {
 @media only screen and (max-width: 860px) {
     .info-form {
         width: 100%;
+    }
+
+    .display-desktop {
+        display: none;
+    }
+
+    .display-movil {
+        display: block;
     }
     
     .nav {
