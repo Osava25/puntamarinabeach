@@ -266,7 +266,7 @@ hr {
 .info-header {
     position: absolute;
     padding-right: 30px;
-    margin-bottom: 35vh;
+    margin-bottom: 15vh;
 }
 
 .content-info-form {
@@ -1007,12 +1007,12 @@ button:hover {
         flex-direction: column;
         align-items: center;
         width: 57%;
-        margin-bottom: 0;
+        margin-bottom: 173px;
     }
 
     .info-header h1 {
         text-align: center;
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
     .info-header a {
         text-decoration: none;
