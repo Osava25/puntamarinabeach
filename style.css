@@ -991,7 +991,7 @@ button:hover {
     } */
     .content-slider img {
         object-fit:cover;
-        object-position: top;
+        object-position: bottom;
         height: 71vh;
     }
     .img-slider-desktop {
