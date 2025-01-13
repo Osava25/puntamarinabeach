@@ -1008,12 +1008,12 @@ button:hover {
         flex-direction: column;
         align-items: center;
         width: 57%;
-        margin-bottom: 209px;
+        margin-bottom: 140px;
     }
 
     .info-header h1 {
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .info-header a {
         text-decoration: none;
