@@ -207,6 +207,17 @@ hr {
 
 .content-slider {
     width: 100%;
+    height: 93vh;
+    background-color: rgb(3 122 116);;
+    margin-top: -72px;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.content-slider-interno {
+    width: 100%;
     background-color: rgb(3 122 116);;
     margin-top: -72px;
     display: flex;
