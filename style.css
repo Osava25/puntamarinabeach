@@ -1256,3 +1256,63 @@ button:hover {
 
 /* Content Slider */
 
+/* Avances de obra */
+
+.info-header-galeria {
+    position: absolute;
+    padding-right: 30px;
+    margin-bottom: -3vh;
+}
+.content-slider .img-slider-desktop {
+    object-fit: cover;
+    height: 100%;
+}
+.info-header-galeria h1 {
+    font-family: 'kepler-std', Times, serif;
+    text-align: right;
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 1px 2px #28282836;
+}
+.row-gallery {
+    width: 1100px;
+    margin: 30px auto;
+}
+.space-top-52 {
+    margin-top: 52px;
+}
+.title-gallery {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+    color: #047A74;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2em;
+}
+.play-video {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.thumb-fancybox-video {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border: 1px solid #20355E;
+    padding: 5px;
+}
+.fa-circle-play {
+    position: absolute;
+    font-size: 4em;
+    top: 43%;
+    left: 14%;
+    color: #fff;
+}
+.thumb-fancybox-gallery {
+    width: 260px;
+    height: auto;
+    margin: 0 5px;
+    border: 1px solid #20355E;
+    padding: 5px;
+}
