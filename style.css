@@ -785,6 +785,15 @@ button:hover {
     padding: 0 30px;
 }
 
+.thumb-fancybox-gallery-home {
+    width: 160px;
+    height: auto;
+    margin: 0 5px;
+    border: 1px solid #20355E;
+    padding: 5px;
+}
+
+
 /*///////////////////////
 /* MARGENES | ESPACIOS */
 /*//////////////////////*/
@@ -1205,6 +1214,10 @@ button:hover {
     }
     .boton-whatsapp-flotante {
         display: none;
+    }
+    .thumb-fancybox-gallery-home {
+        width: 350px;
+        margin: 0 auto;
     }
     /*///////////////////////
     /* MARGENES | ESPACIOS */
