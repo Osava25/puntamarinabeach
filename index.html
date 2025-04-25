@@ -693,9 +693,9 @@
                 </div>
             </div>
             <!-- Boton Telefono flotante Movil -->
-            <div class="boton-flot-tel">
+            <!-- <div class="boton-flot-tel">
                 <a target="_blank" href="tel:+573001631727"><div class="contact-button-tel-movil"><i class="fa-solid fa-phone"></i> Llámanos</div></a>
-            </div>
+            </div> -->
             <!-- <div class="boton-whatsapp-flotante">
                 <a target="_blank" href="https://wa.link/evsvky "><img src="src/img/boton-whatsapp.png" width="45px !important" alt="Contáctanos"></a>
             </div> -->
@@ -712,6 +712,11 @@
             </div>
         </div>    
     </div>
+    <!-- Boton flotante tour 360 -->
+      <div class="button360fixed" data-fancybox="apto360" data-src="#button360-88"><img src="src/img/tour-virtual360.png" alt="Tour 360 Puntamarina Beach" /></div>
+      <div id="button360-88" style="display:none" class="button360-content-iframe" >
+        <iframe class="button360-iframe" src="https://puntamarinabeach.co/360/" frameborder="0" width="1280" height="600"></iframe>
+      </div>
     <script src="view.js"></script>
     <!-- JS Fancybox Gallery Slider -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -740,6 +745,7 @@
             //
             //groupAttr: false,
         });
+        Fancybox.bind('[data-fancybox]', {})
     </script>
     <!-- End JS Fancybox Gallery Slider -->
       <!--Clientify Tracking Begins-->
