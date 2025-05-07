@@ -1027,6 +1027,12 @@ button:hover {
 
     }
 
+    .button-cotizar-section {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+    }
+
     .content-slider {
         align-items: center;
         justify-content: center;
