@@ -1321,6 +1321,7 @@ button:hover {
 .content-slider .img-slider-desktop {
     object-fit: cover;
     height: 100%;
+    object-position: top;
 }
 .info-header-galeria h1 {
     font-family: 'kepler-std', Times, serif;
