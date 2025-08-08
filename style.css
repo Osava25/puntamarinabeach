@@ -416,6 +416,10 @@ button:hover {
     display: none;
 }
 
+.img-apto {
+    width: 80%;
+}
+
 /* ESTILOS SLIDER */
 .slider-container {
     position: relative;
